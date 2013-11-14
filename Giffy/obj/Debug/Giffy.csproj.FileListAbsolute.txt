@@ -1,0 +1,9 @@
+c:\users\mjordan\documents\visual studio 2013\Projects\Giffy\Giffy\bin\Debug\Giffy.exe.config
+c:\users\mjordan\documents\visual studio 2013\Projects\Giffy\Giffy\bin\Debug\Giffy.exe
+c:\users\mjordan\documents\visual studio 2013\Projects\Giffy\Giffy\bin\Debug\Giffy.pdb
+c:\users\mjordan\documents\visual studio 2013\Projects\Giffy\Giffy\obj\Debug\Giffy.csprojResolveAssemblyReference.cache
+c:\users\mjordan\documents\visual studio 2013\Projects\Giffy\Giffy\obj\Debug\Giffy.Form1.resources
+c:\users\mjordan\documents\visual studio 2013\Projects\Giffy\Giffy\obj\Debug\Giffy.Properties.Resources.resources
+c:\users\mjordan\documents\visual studio 2013\Projects\Giffy\Giffy\obj\Debug\Giffy.csproj.GenerateResource.Cache
+c:\users\mjordan\documents\visual studio 2013\Projects\Giffy\Giffy\obj\Debug\Giffy.exe
+c:\users\mjordan\documents\visual studio 2013\Projects\Giffy\Giffy\obj\Debug\Giffy.pdb
