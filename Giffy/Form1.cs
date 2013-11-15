@@ -24,14 +24,32 @@ namespace Giffy
 
         private void openFileDialog1(object sender, EventArgs e)
         {
-            openFD.ShowDialog();
+            if(openFD.ShowDialog() != DialogResult.OK)
+                return;
+
             string userFile = openFD.FileName;
-            pictureBox1.Image = Image.FromFile(userFile);
+    
+            try
+            {
+                Image newImage = Image.FromFile(userFile);
+            }
+            catch (OutOfMemoryException ex)
+            {
+                MessageBox.Show("This file cannot be opened.", "Invalid Image", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            Image userImage = Image.FromFile(userFile);
+            this.Width = userImage.Width + 16;
+            this.Height = userImage.Height + 38;
+            this.Text = userFile + " (" + userImage.Width + "x" + userImage.Height + ")";
+            pictureBox1.Image = userImage;
         }
 
         private void originalSizeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-  
+            this.Width = pictureBox1.Image.Width + 16;
+            this.Height = pictureBox1.Image.Height + 38;
         }
     }
 }
