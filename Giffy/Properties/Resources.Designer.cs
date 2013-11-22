@@ -59,15 +59,5 @@ namespace Giffy.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap anigif_enhanced_buzz_21741_1377617888_14 {
-            get {
-                object obj = ResourceManager.GetObject("anigif_enhanced-buzz-21741-1377617888-14", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

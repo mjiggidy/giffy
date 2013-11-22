@@ -15,6 +15,8 @@ namespace Giffy
         public Form1()
         {
             InitializeComponent();
+            this.DragEnter += new DragEventHandler(Form1_DragEnter);
+            this.DragDrop += new DragEventHandler(Form1_DragDrop);
         }
 
         private void contextMenuStrip2_Opening(object sender, CancelEventArgs e)
@@ -27,13 +29,24 @@ namespace Giffy
             if(openFD.ShowDialog() != DialogResult.OK)
                 return;
 
-            string userFile = openFD.FileName;
+            loadImage(openFD.FileName);
     
+            
+        }
+
+        private void originalSizeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Width = pictureBox1.Image.Width + 16;
+            this.Height = pictureBox1.Image.Height + 38;
+        }
+
+        public void loadImage(String userFile)
+        {
             try
             {
                 Image newImage = Image.FromFile(userFile);
             }
-            catch (OutOfMemoryException ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("This file cannot be opened.", "Invalid Image", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -46,10 +59,29 @@ namespace Giffy
             pictureBox1.Image = userImage;
         }
 
-        private void originalSizeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Width = pictureBox1.Image.Width + 16;
-            this.Height = pictureBox1.Image.Height + 38;
+            this.Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            String[] args = Environment.GetCommandLineArgs();
+            if (args.Count() > 1)
+            {
+                loadImage(args[1]);
+            }
+        }
+
+        private void Form1_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Move;
+        }
+
+        private void Form1_DragDrop(object sender, DragEventArgs e)
+        { 
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+            loadImage(files[0]);
         }
     }
 }

@@ -1,0 +1,9 @@
+C:\Users\mjordan\Documents\Visual Studio 2013\Projects\Giffy\Giffy\bin\Release\.gifted.exe.config
+C:\Users\mjordan\Documents\Visual Studio 2013\Projects\Giffy\Giffy\bin\Release\.gifted.exe
+C:\Users\mjordan\Documents\Visual Studio 2013\Projects\Giffy\Giffy\bin\Release\.gifted.pdb
+C:\Users\mjordan\Documents\Visual Studio 2013\Projects\Giffy\Giffy\obj\Release\Giffy.Form1.resources
+C:\Users\mjordan\Documents\Visual Studio 2013\Projects\Giffy\Giffy\obj\Release\Giffy.Properties.Resources.resources
+C:\Users\mjordan\Documents\Visual Studio 2013\Projects\Giffy\Giffy\obj\Release\Giffy.csproj.GenerateResource.Cache
+C:\Users\mjordan\Documents\Visual Studio 2013\Projects\Giffy\Giffy\obj\Release\.gifted.exe
+C:\Users\mjordan\Documents\Visual Studio 2013\Projects\Giffy\Giffy\obj\Release\.gifted.pdb
+C:\Users\mjordan\Documents\Visual Studio 2013\Projects\Giffy\Giffy\obj\Release\Giffy.csprojResolveAssemblyReference.cache
